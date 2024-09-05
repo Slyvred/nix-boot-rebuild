@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Running fsck on /dev/nvme0n1p1..."
-sudo fsck /dev/nvme0n1p1
+sudo fsck /dev/nvme0n1p1 | echo -e "3\n1\n1\n1"
 echo "done."
 
 echo "Mounting filesystems..."
